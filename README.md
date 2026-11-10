@@ -66,7 +66,7 @@ Both games start with **3 lives**.
 
 No compilation or Python installation is needed.
 
-1. Go to the official website: **[minigame-tech.github.io](https://mini-game-tech.github.io/)**.
+1. Go to the official website: **[mini-game-tech.github.io](https://mini-game-tech.github.io/)**.
 2. Pick a game from the catalog.
 3. Download the file for your operating system.
 4. Extract the archive and run the executable.
