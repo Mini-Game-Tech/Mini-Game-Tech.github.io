@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://minigame-tech.github.io/sitemap.xml
+Sitemap: https://mini-game-tech.github.io/sitemap.xml
