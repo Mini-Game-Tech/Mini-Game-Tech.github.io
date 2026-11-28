@@ -8,6 +8,12 @@
     </url>
 
     <url>
+        <loc>https://mini-game-tech.github.io/Pages/game_library.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
         <loc>https://mini-game-tech.github.io/Pages/Game_Pages/frogger.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
