@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="QY5TZIXzYBKXMx78bhKzkDnEO0w9GfPseJlernAC-no" />
-    <link rel="icon" type="image/jpeg" href="Logo.jpeg">
-    <link rel="stylesheet" href="./Style/style.css">
+    <meta name="google-site-verification" content="QY5TZIXzYBKXMx78bhKzkDnEO0w9GfPseJlernAC-no">
+    <link rel="icon" type="image/png" href="mini-game-tech-logo.png">
+    <link rel="stylesheet" href="Style/Home.css">
 
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,178 +15,175 @@
 
     <!-- SEO Base -->
     <title>Minigame Tech - Arcade Remakes & Retrogaming</title>
-    <meta name="description" content="La casa dei remake arcade perfetti. Scarica gratuitamente rivisitazioni open source di classici come Pacman, Frogger e molti altri per Linux e Windows.">
-    <meta name="keywords" content="minigame, minigiochi gratis, remake pacman, remake frogger, giochi retròg, giochi linux, giochi windows, pixel art">
+    <meta name="description" content="Classic retro arcade games, rebuilt from scratch in Python, C# and ready to play as standalone downloads. No installation, no Python required.">
+    <meta name="keywords" content="minigame, minigiochi gratis, remake pacman, remake frogger, giochi retrogaming, giochi linux, giochi windows, pixel art">
     <link rel="canonical" href="https://mini-game-tech.github.io/">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Minigame Tech - Arcade Remakes & Retrogaming">
-    <meta property="og:description" content="Rivivi i grandi classici. Remake di giochi gratuiti, open source, per Linux e Windows.">
+    <meta property="og:description" content="Classic retro arcade games, rebuilt from scratch in Python, C# and ready to play as standalone downloads. No installation, no Python required.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mini-game-tech.github.io/">
+    <meta property="og:image" content="https://mini-game-tech.github.io/mini-game-tech-logo.png">
 </head>
 <body>
-    <!-- Effetto CRT Overlay e Grid -->
-    <div class="scanlines"></div>
-    <div class="grid-bg"></div>
+    <div class="scan"></div>
+    <div class="gridbg"></div>
 
-    <!-- Navigazione -->
-    <nav class="navbar">
-        <div class="nav-content">
-            <div class="nav-logo">MGT<span>.</span></div>
-            <div class="nav-links">
-                <a href="https://github.com/Mini-Game-Tech/Mini-Game-Tech.github.io" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=codelab.italia@gmail.com" target="_blank" rel="noopener"><i class="fa-solid fa-envelope"></i> Contatti</a>
+    <nav>
+        <div class="wrap">
+            <a class="brand" href="index.html" aria-label="Minigame Tech - Home"><img src="mini-game-tech-logo.png" alt="">MGT<span>.</span></a>
+            <div class="links">
+                <a class="t" href="#storia">Storia</a>
+                <a class="t" href="#giochi">Giochi</a>
+                <a class="t" href="#download">Download</a>
+                <a class="t" href="#app">App</a>
+                <a href="https://github.com/Mini-Game-Tech/Mini-Game-Tech.github.io" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a class="btn" href="Pages/game_library.html"><span class="lb">Game Library</span> <i class="fa-solid fa-gamepad"></i></a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <header class="hero">
-        <div class="hero-content">
-            <div class="badge-pill pulse"><i class="fa-solid fa-code-commit"></i> Nuova Versione Online</div>
-            <h1 class="logo">MINI GAME<span> TECH</span></h1>
-            <p class="subtitle">Sviluppo indipendente di cloni e remake arcade.<br>Riscopri i classici, progettati da zero e pronti da giocare.</p>
-            <div class="hero-actions">
-                <a href="#games" class="btn btn-primary">Esplora i Giochi <i class="fa-solid fa-gamepad"></i></a>
-            </div>
+        <h1 class="logo">MINI GAME<span> TECH</span></h1>
+        <p class="sub">Classici arcade rifatti da zero, pronti da scaricare e giocare.<br>Niente Python, nessun linguaggio da scaricare.</p>
+        <div class="cta">
+            <a class="btn p" href="Pages/game_library.html">Esplora la Game Library <i class="fa-solid fa-gamepad"></i></a>
+            <a class="btn g" href="#storia">Perché esiste questo sito</a>
+        </div>
+        <p class="note">Gratuito, per Linux e Windows. L'interfaccia dei giochi è in italiano.</p>
+        <div class="track" aria-hidden="true">
+            <div class="dots"></div>
+            <div class="ghost"></div>
+            <div class="pac"><i></i><i></i></div>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main id="games">
-        <section class="game-section">
-            <h2 class="section-title"><i class="fa-solid fa-bolt"></i> Disponibili Ora</h2>
-            <div class="grid">
-                <!-- FROGGER -->
-                <a class="card glass-effect" href="Pages/frogger.html">
-                    <div class="card-glow"></div>
-                    <div class="thumb" style="background-image: linear-gradient(135deg, #1d9e75, #0f6e56);">
-                        <span class="emoji">🐸</span>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-header">
-                            <h3 class="card-title">FROGGER</h3>
-                            <span class="badge ready"><i class="fa-solid fa-check"></i> Live</span>
-                        </div>
-                        <p class="card-desc">Il re degli attraversamenti pericolosi. Schiva il traffico e salta sui tronchi in questo remake fedele al millimetro.</p>
-                        <div class="card-footer">
-                            <span class="platform-icon"><i class="fa-brands fa-linux"></i></span>
-                            <span class="platform-icon"><i class="fa-brands fa-windows"></i></span>
-                            <span class="badge_download"><i class="fa-solid fa-download"></i> Download</span>
-                        </div>
-                    </div>
-                </a>
+    <main class="wrap">
 
-                <!--- SPACE INVADERS --->
-                <a class="card glass-effect" href="Pages/space_invaders.html">
-                    <div class="card-glow"></div>
-                    <div class="thumb" style="background-image: linear-gradient(135deg, #4b3080, #2c1a4d);">
-                        <span class="emoji">👾</span>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-header">
-                            <h3>SPACE INVADERS</h3>
-                            <span class="badge ready"><i class="fa-solid fa-check"></i> Live</span>
-                        </div>
-                        <p class="card-desc">L'orda aliena è arrivata. Difendi la terra con i tuoi cannoni.</p>
-                        <div class="card-footer">
-                            <span class="platform-icon"><i class="fa-brands fa-linux"></i></span>
-                            <span class="platform-icon"><i class="fa-brands fa-windows"></i></span>
-                            <span class="badge_download"><i class="fa-solid fa-download"></i> Download</span>
-                        </div>
-                    </div>
-                </a>
+        <section id="storia">
+            <h2><i class="fa-solid fa-book-open"></i> Perché nasce Minigame Tech</h2>
+            <p class="lead">Minigame Tech è partito come una serie di progetti scolastici, tra cui lavori per l'esame di maturità come Frogger e Pacman. Oggi è una libreria personale di classici retro, in continua evoluzione.</p>
+            <ol class="story">
+                <li><h3>Si impara costruendo</h3><p>Il modo migliore per capire come funziona un gioco è rifarlo da zero: logica, grafica, menu e controlli.</p></li>
+                <li><h3>Il problema</h3><p>Un progetto che gira solo sul PC di chi lo scrive non lo gioca nessuno. Servivano file pronti all'uso, senza compilare e senza installare Python.</p></li>
+                <li><h3>La soluzione</h3><p>Un sito dove scaricare ogni gioco come eseguibile autonomo, con menu, tutorial in gioco e comandi da tastiera.</p></li>
+                <li><h3>Il futuro</h3><p>Dopo i sette classici, la prossima tappa sono i minigiochi originali, che vanno oltre i cloni.</p></li>
+            </ol>
+        </section>
 
-                <!--- TETRIS --->
-                <a class="card glass-effect" href="Pages/tetris.html">
-                    <div class="card-glow"></div>
-                    <div class="thumb" style="background-image: linear-gradient(135deg, #235882, #11324c);">
-                        <span class="emoji">🧱</span>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-header">
-                            <h3 class="card-title">TETRIS</h3>
-                            <span class="badge ready"><i class="fa-solid fa-check"></i> Live</span>
-                        </div>
-                        <p class="card-desc">L'intramontabile puzzle russo. Incastra i tetramini e pulisci le linee.</p>
-                        <div class="card-footer">
-                            <span class="platform-icon"><i class="fa-brands fa-linux"></i></span>
-                            <span class="platform-icon"><i class="fa-brands fa-windows"></i></span>
-                            <span class="badge_download"><i class="fa-solid fa-download"></i> Download</span>
-                        </div>
-                    </div>
-                </a>
+        <section id="giochi">
+            <h2><i class="fa-solid fa-bolt"></i> I sette classici</h2>
+            <p class="lead">Tutti disponibili. Ogni gioco ha la sua pagina con descrizione e download.</p>
+            <ul class="games">
+                <li><a class="game" href="Pages/Game_Pages/frogger.html" style="--c1:#1d9e75;--c2:#0f6e56"><div class="th">🐸</div><div class="bd"><h3>FROGGER</h3><p>Schiva il traffico e salta sui tronchi. Raggiungi la sponda opposta 5 volte per vincere.</p><div class="os"><i class="fa-brands fa-linux"></i><i class="fa-brands fa-windows"></i><b>Scarica</b></div></div></a></li>
+                <li><a class="game" href="Pages/Game_Pages/space_invaders.html" style="--c1:#4b3080;--c2:#2c1a4d"><div class="th">👾</div><div class="bd"><h3>SPACE INVADERS</h3><p>L'orda aliena è arrivata. Distruggi ogni nemico e difendi la Terra.</p><div class="os"><i class="fa-brands fa-linux"></i><i class="fa-brands fa-windows"></i><b>Scarica</b></div></div></a></li>
+                <li><a class="game" href="Pages/Game_Pages/tetris.html" style="--c1:#235882;--c2:#11324c"><div class="th">🧱</div><div class="bd"><h3>TETRIS</h3><p>Incastra i tetramini e pulisci le linee. In pausa con il tasto P.</p><div class="os"><i class="fa-brands fa-linux"></i><i class="fa-brands fa-windows"></i><b>Scarica</b></div></div></a></li>
+                <li><a class="game" href="Pages/Game_Pages/pacman.html" style="--c1:#ffd166;--c2:#d84a30"><div class="th">👻</div><div class="bd"><h3>PACMAN</h3><p>Mangia tutte le pillole ed evita i fantasmi nel labirinto più famoso degli anni '80.</p><div class="os"><i class="fa-brands fa-linux"></i><b>Scarica</b></div></div></a></li>
+            </ul>
+            <div class="more"><a class="btn g" href="Pages/game_library.html">Apri la Game Library <i class="fa-solid fa-arrow-right"></i></a></div>
+        </section>
 
-                <!-- PACMAN -->
-                <a class="card glass-effect" href="Pages/pacman.html">
-                    <div class="card-glow"></div>
-                    <div class="thumb" style="background-image: linear-gradient(135deg, #ffd166, #d84a30);">
-                        <span class="emoji">👻</span>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-header">
-                            <h3 class="card-title">PACMAN</h3>
-                            <span class="badge ready"><i class="fa-solid fa-check"></i> Live</span>
-                        </div>
-                        <p class="card-desc">Labirinti, fantasmini e pillole energetiche. L'icona degli anni '80 torna in una veste ricostruita e ottimizzata.</p>
-                        <div class="card-footer">
-                            <span class="platform-icon"><i class="fa-brands fa-linux"></i></span>
-                            <span class="badge_download"><i class="fa-solid fa-download"></i> Download</span>
-                        </div>
-                    </div>
-                </a>
+        <section id="download">
+            <h2><i class="fa-solid fa-download"></i> Come scaricare e giocare</h2>
+            <p class="lead">Non serve compilare nulla né installare nessun linguaggio di programmazione.</p>
+            <div class="dl">
+                <ol class="steps">
+                    <li>Apri la Game Library e scegli un gioco.</li>
+                    <li>Scarica il file per il tuo sistema operativo.</li>
+                    <li>Estrai l'archivio.</li>
+                    <li>Avvia l'eseguibile.</li>
+                </ol>
+                <div>
+                    <div class="box"><h3><i class="fa-brands fa-linux"></i> Linux</h3><p>Se il file non parte, rendilo prima eseguibile:</p><pre>chmod +x ./nome-del-gioco
+    ./nome-del-gioco</pre></div>
+                    <div class="box"><h3><i class="fa-brands fa-windows"></i> Windows</h3><p>Gli eseguibili creati con PyInstaller possono far comparire un avviso di Windows SmartScreen o dell'antivirus, perché non sono firmati digitalmente. È un falso positivo noto per i programmi non firmati. Se preferisci, controlla i file nel repository del progetto prima di avviarli.</p></div>
+                    <div class="box"><h3><i class="fa-solid fa-desktop"></i> Requisiti</h3><p>Un PC desktop con Linux o Windows, una tastiera e uno schermo di almeno 800×640 pixel.</p></div>
+                </div>
             </div>
         </section>
 
-        <section class="game-section mt-5">
-            <h2 class="section-title"><i class="fa-solid fa-code"></i> In Sviluppo & Progetti Futuri</h2>
-            <div class="grid">
-                <!-- SNAKE -->
-                <div class="card glass-effect disabled">
-                    <div class="thumb" style="background-image: linear-gradient(135deg, #276b3a, #133b1e);">
-                        <span class="emoji">🐍</span>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">SNAKE</h3>
-                        <p class="card-desc">Il classico che ha fatto la storia dei telefoni cellulari.</p>
-                        <span class="badge soon"><i class="fa-solid fa-calendar"></i> In Sviluppo</span>
-                    </div>
-                </div>
+        <section id="controlli">
+            <h2><i class="fa-solid fa-keyboard"></i> Comandi</h2>
+            <p class="lead">Ogni gioco ha anche un tutorial in gioco.</p>
+            <div class="tw">
+                <table>
+                    <thead><tr><th>Gioco</th><th>Movimento</th><th>Conferma / Indietro</th><th>Obiettivo</th></tr></thead>
+                    <tbody>
+                    <tr><td>Frogger</td><td>Frecce</td><td><kbd>Invio</kbd> / <kbd>Esc</kbd></td><td>Raggiungi 5 volte la sponda opposta</td></tr>
+                    <tr><td>Pacman</td><td>Frecce o <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd></td><td><kbd>Invio</kbd> / <kbd>Esc</kbd></td><td>Mangia tutte le pillole ed evita i fantasmi</td></tr>
+                    <tr><td>Space Invaders</td><td>Frecce o <kbd>A</kbd> <kbd>D</kbd></td><td><kbd>Invio</kbd> / <kbd>Esc</kbd></td><td>Distruggi ogni nemico</td></tr>
+                    <tr><td>Tetris</td><td>Frecce, <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> o Spazio</td><td><kbd>P</kbd> per la pausa</td><td>Incastra i vari pezzi</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-                <!-- 2048 -->
-                <div class="card glass-effect disabled">
-                    <div class="thumb" style="background-image: linear-gradient(135deg, #b8860b, #6b4c03);">
-                        <span class="emoji">🔢</span>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">2048</h3>
-                        <p class="card-desc">Scorri, unisci e raggiungi la mistica tessera 2048.</p>
-                        <span class="badge soon"><i class="fa-solid fa-calendar"></i> In Sviluppo</span>
-                    </div>
+        <section id="app">
+            <div class="two">
+                <div>
+                    <h2><i class="fa-brands fa-android"></i> App Android</h2>
+                    <p class="lead n">Minigame Tech è disponibile anche come app Android: un contenitore nativo leggero che carica il sito, con modalità a schermo intero e una pagina di riserva quando sei offline. L'app mostra il sito online, quindi serve una connessione a internet e vedi sempre l'ultima versione. Gli eseguibili da scaricare sono solo per desktop.</p>
+                    <p class="mt"><a class="btn g" href="https://github.com/minigame-tech/minigame-tech-app" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Repository dell'app</a></p>
                 </div>
-
-                <!-- DONKEY KONG -->
-                <div class="card glass-effect disabled">
-                    <div class="thumb" style="background-image: linear-gradient(135deg, #a33b3b, #5e1c1c);">
-                        <span class="emoji">🦍</span>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">DONKEY KONG</h3>
-                        <p class="card-desc">Il primo vero platform della storia. Scala i tralicci e salva Pauline.</p>
-                        <span class="badge soon"><i class="fa-solid fa-calendar"></i> In Sviluppo</span>
-                    </div>
+                <div>
+                    <h2><i class="fa-solid fa-screwdriver-wrench"></i> Come sono fatti</h2>
+                    <ul class="tech">
+                        <li><i class="fa-solid fa-pen-ruler"></i><span><b>Rifatti da zero.</b> Ogni gioco è stato programmato da capo, schermata dopo schermata.</span></li>
+                        <li><i class="fa-solid fa-code"></i><span><b>Scritti da una sola persona.</b> Con Python e C#, due linguaggi di programmazione molto usati.</span></li>
+                        <li><i class="fa-solid fa-box-open"></i><span><b>Pronti all'uso.</b> Li scarichi e funzionano subito, senza installare altro.</span></li>
+                        <li><i class="fa-solid fa-laptop"></i><span><b>Per il tuo computer.</b> Esistono versioni per Windows e per Linux (Pacman c'è solo per Linux).</span></li>
+                    </ul>
                 </div>
             </div>
         </section>
+
+        <section id="percorso">
+            <div class="two">
+                <div>
+                    <h2><i class="fa-solid fa-flag-checkered"></i> Il percorso</h2>
+                    <ul class="road">
+                        <li><i class="fa-solid fa-square-check"></i> Frogger</li>
+                        <li><i class="fa-solid fa-square-check"></i> Pacman</li>
+                        <li><i class="fa-solid fa-square-check"></i> Space Invaders</li>
+                        <li><i class="fa-solid fa-square-check"></i> Tetris</li>
+                        <li><i class="fa-solid fa-square-check"></i> Snake</li>
+                        <li><i class="fa-solid fa-square-check"></i> 2048</li>
+                        <li><i class="fa-solid fa-square-check"></i> Donkey Kong</li>
+                        <li class="next"><i class="fa-regular fa-square"></i> Minigiochi originali, oltre i cloni classici</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2><i class="fa-solid fa-scale-balanced"></i> Regole d'uso e segnalazioni</h2>
+                    <div class="box"><h3>Cosa puoi fare con i giochi</h3><p>Puoi scaricarli e giocarci gratis, per divertimento personale. Senza un permesso scritto non puoi copiarli, modificarli, metterli su altri siti o venderli. Chi è curioso può vedere come sono fatti su GitHub, ma il codice non è libero da riutilizzare.</p></div>
+                    <div class="box"><h3>Hai trovato un problema?</h3><p>Il progetto è personale e non accetta modifiche dall'esterno, ma i tuoi consigli sono benvenuti. <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=codelab.italia@gmail.com" target="_blank" rel="noopener">Scrivici una email</a> e indicaci quale gioco stavi usando, se hai Windows o Linux, cosa stavi facendo quando è successo e, se puoi, allega una foto dello schermo.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="big">
+                <h2>Pronto a giocare?</h2>
+                <p>Sette classici ti aspettano nella Game Library. Per domande o proposte, scrivici.</p>
+                <div class="cta">
+                    <a class="btn p" href="Pages/game_library.html">Vai alla Game Library <i class="fa-solid fa-gamepad"></i></a>
+                    <a class="btn g" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=codelab.italia@gmail.com" target="_blank" rel="noopener"><i class="fa-solid fa-envelope"></i> Contatti</a>
+                    <a class="btn g" href="https://www.instagram.com/salvo_codes/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> @salvo_codes</a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-logo">MGT<span>.</span></div>
-            <p>&copy; 2026 Minigame Tech. Sviluppato da <a href="https://github.com/minigame-tech" target="_blank">Salvatore</a>.</p>
-            <p class="small-text">Tutti i loghi e i nomi dei giochi originali appartengono ai rispettivi proprietari. Questo progetto ha finalità unicamente educative e non a scopo di lucro.</p>
+        <div class="fl">
+            <a href="Pages/game_library.html">Game Library</a>
+            <a href="https://github.com/Mini-Game-Tech/Mini-Game-Tech.github.io" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.instagram.com/salvo_codes/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=codelab.italia@gmail.com" target="_blank" rel="noopener">Contatti</a>
         </div>
+        <p>&copy; 2026 Salvatore Cipriano. Sviluppato con passione da <a href="https://github.com/minigame-tech" target="_blank" rel="noopener">Minigame Tech</a>.</p>
+        <p class="s">Tutti i loghi e i nomi dei giochi originali appartengono ai rispettivi proprietari. Questo progetto ha finalità unicamente educative e non a scopo di lucro.</p>
     </footer>
 </body>
 </html>

@@ -8,25 +8,25 @@
     </url>
 
     <url>
-        <loc>https://mini-game-tech.github.io/Pages/frogger.html</loc>
+        <loc>https://mini-game-tech.github.io/Pages/Game_Pages/frogger.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://mini-game-tech.github.io/Pages/pacman.html</loc>
+        <loc>https://mini-game-tech.github.io/Pages/Game_Pages/pacman.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://mini-game-tech.github.io/Pages/space_invaders.html</loc>
+        <loc>https://mini-game-tech.github.io/Pages/Game_Pages/space_invaders.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://mini-game-tech.github.io/Pages/tetris.html</loc>
+        <loc>https://mini-game-tech.github.io/Pages/Game_Pages/tetris.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>

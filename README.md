@@ -48,8 +48,8 @@ Each game comes with a menu, an in-game tutorial and keyboard controls, so you c
 | **Space Invaders** | ✅ Available | ✅ | ✅ |
 | **Tetris** | ✅ Available | ✅ | ✅ |
 | **Snake** | 🔧 In progress | 🔜 | 🔜 |
-| **2048** | 🗓️ Planned | 🔜 | 🔜 |
-| **Donkey Kong** | 🗓️ Planned | 🔜 | 🔜 |
+| **2048** | 🔧 In progress| 🔜 | 🔜 |
+| **Donkey Kong** | 🔧 In progress | 🔜 | 🔜 |
 
 ### Controls
 
@@ -105,10 +105,10 @@ Minigame Tech is also available as an Android app: a lightweight native wrapper 
 - [x] Frogger
 - [x] Pacman
 - [x] Space Invaders
-- [X] Tetris
+- [x] Tetris
 - [ ] Snake *(in progress)*
-- [ ] 2048
-- [ ] Donkey Kong
+- [ ] 2048 *(in progress)*
+- [ ] Donkey Kong *(in progress)*
 - [ ] Original minigames (beyond the classic clones)
 
 ## 🐞 Feedback & Bug Reports

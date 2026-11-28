@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Minigame Tech: remake arcade e giochi indipendenti da scaricare e provare. Frogger, Space Invaders, Tetris, Snake, 2048, Donkey Kong e Pacman.">
+    <meta name="google-site-verification" content="QY5TZIXzYBKXMx78bhKzkDnEO0w9GfPseJlernAC-no" />
+    <title>Minigame Tech - Arcade Remakes & Retrogaming</title>
+    <link rel="icon" type="image/png" href="../mini-game-tech-logo.png">
+    <link rel="stylesheet" href="../Style/Game_Library.css">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+    <!-- Navigazione -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-logo">MGT<span>.</span></div>
+            <div class="nav-links">
+                <a href="../index.html" class="btn-secondary"><i class="fa-solid fa-gamepad"></i><span class="label">Home</span></a>
+                <a href="https://github.com/Mini-Game-Tech/Mini-Game-Tech.github.io" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i><span class="label">GitHub</span></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=codelab.italia@gmail.com" target="_blank" rel="noopener"><i class="fa-solid fa-envelope"></i><span class="label">Contatti</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <h1 class="logo">MINI GAME<span>TECH</span></h1>
+                <p class="subtitle">Sviluppo indipendente di remake arcade e giochi indipendenti. Riscopri i classici, progettati da zero e pronti da giocare, e scopri nuovi giochi indipendenti da provare.</p>
+                <a href="#games" class="btn btn-primary">Esplora i giochi <i class="fa-solid fa-arrow-down"></i></a>
+            </div>
+
+            <div class="cabinet" aria-hidden="true">
+                <div class="crt">
+                    <div class="hud"><span>1UP</span><span>07 GIOCHI</span></div>
+                    <canvas id="scene" width="192" height="108"></canvas>
+                </div>
+                <div class="controls"><i class="stick"></i><i class="b1"></i><i class="b2"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenuto principale -->
+    <main id="games">
+        <h2 class="section-title"><i class="fa-solid fa-bolt"></i> Disponibili ora</h2>
+
+        <div class="grid">
+            <!-- FROGGER -->
+            <a class="card" href="Game_Pages/frogger.html" style="--c:#5dcaa5;--g1:#1d9e75;--g2:#0f6e56">
+                <div class="screen">
+                    <span class="badge">Live</span>
+                    <canvas class="sprite" data-sprite="frog" width="16" height="16" aria-hidden="true">🐸</canvas>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">FROGGER</h3>
+                    <p class="card-desc">Il re degli attraversamenti pericolosi. Schiva il traffico e salta sui tronchi in questo remake fedele al millimetro.</p>
+                    <div class="card-footer">
+                        <span class="plat"><i class="fa-brands fa-linux"></i> Linux</span>
+                        <span class="plat"><i class="fa-brands fa-windows"></i> Windows</span>
+                        <span class="get"><i class="fa-solid fa-download"></i> Download</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- SPACE INVADERS -->
+            <a class="card" href="Game_Pages/space_invaders.html" style="--c:#a98bff;--g1:#4b3080;--g2:#2c1a4d">
+                <div class="screen">
+                    <span class="badge">Live</span>
+                    <canvas class="sprite" data-sprite="invader" width="16" height="16" aria-hidden="true">👾</canvas>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">SPACE INVADERS</h3>
+                    <p class="card-desc">L'orda aliena è arrivata. Difendi la terra con i tuoi cannoni.</p>
+                    <div class="card-footer">
+                        <span class="plat"><i class="fa-brands fa-linux"></i> Linux</span>
+                        <span class="plat"><i class="fa-brands fa-windows"></i> Windows</span>
+                        <span class="get"><i class="fa-solid fa-download"></i> Download</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- TETRIS -->
+            <a class="card" href="Game_Pages/tetris.html" style="--c:#5aaaf0;--g1:#235882;--g2:#11324c">
+                <div class="screen">
+                    <span class="badge">Live</span>
+                    <canvas class="sprite" data-sprite="tetris" width="16" height="16" aria-hidden="true">🧱</canvas>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">TETRIS</h3>
+                    <p class="card-desc">L'intramontabile puzzle russo. Incastra i tetramini e pulisci le linee.</p>
+                    <div class="card-footer">
+                        <span class="plat"><i class="fa-brands fa-linux"></i> Linux</span>
+                        <span class="plat"><i class="fa-brands fa-windows"></i> Windows</span>
+                        <span class="get"><i class="fa-solid fa-download"></i> Download</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- PACMAN -->
+            <a class="card" href="Game_Pages/pacman.html" style="--c:#ffd166;--g1:#e2552f;--g2:#6e1d0f">
+                <div class="screen">
+                    <span class="badge">Live</span>
+                    <canvas class="sprite" data-sprite="pacman" width="16" height="16" aria-hidden="true">👻</canvas>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">PACMAN</h3>
+                    <p class="card-desc">Labirinti, fantasmini e pillole energetiche. L'icona degli anni '80 torna in una veste ricostruita e ottimizzata.</p>
+                    <div class="card-footer">
+                        <span class="plat"><i class="fa-brands fa-linux"></i> Linux</span>
+                        <span class="get"><i class="fa-solid fa-download"></i> Download</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- SNAKE -->
+            <div class="card card-empty" style="--c:#6fdc8c;--g1:#276b3a;--g2:#133b1e">
+                <div class="screen">
+                    <canvas class="sprite" data-sprite="snake" width="16" height="16" aria-hidden="true">🐍</canvas>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">SNAKE</h3>
+                    <p class="card-desc">Il classico gioco di crescita del serpente ghiotto di mele.</p>
+                    <div class="card-footer">
+                        <span class="badge soon">In sviluppo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2048 -->
+            <div class="card card-empty" style="--c:#ffc94d;--g1:#b8860b;--g2:#6b4c03">
+                <div class="screen">
+                    <canvas class="sprite" data-sprite="tiles" width="16" height="16" aria-hidden="true">🔢</canvas>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">2048</h3>
+                    <p class="card-desc">Scorri, unisci e raggiungi la mistica tessera 2048.</p>
+                    <div class="card-footer">
+                        <span class="badge soon">In sviluppo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DONKEY KONG -->
+            <div class="card card-empty" style="--c:#ff6b6b;--g1:#a33b3b;--g2:#5e1c1c">
+                <div class="screen">
+                    <canvas class="sprite" data-sprite="barrel" width="16" height="16" aria-hidden="true">🦍</canvas>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">DONKEY KONG</h3>
+                    <p class="card-desc">Il primo vero platform della storia. Scala i tralicci e salva Pauline.</p>
+                    <div class="card-footer">
+                        <span class="badge soon">In sviluppo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">MGT<span>.</span></div>
+            <p>&copy; 2026 Minigame Tech. Sviluppato da <a href="https://github.com/minigame-tech" target="_blank" rel="noopener">Salvatore</a>.</p>
+            <p class="small-text">Tutti i loghi e i nomi dei giochi originali appartengono ai rispettivi proprietari. Questo progetto ha finalità unicamente educative e non a scopo di lucro.</p>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            /* ---------- Sprite pixel art (16x16) delle card ---------- */
+            var SPRITES = {
+                frog: {
+                    pal: { g: '#2fbf71', w: '#ffffff', k: '#111111', d: '#14663d', l: '#a8f0c4' },
+                    rows: [
+                        '................',
+                        '...ggg....ggg...',
+                        '..gwwwg..gwwwg..',
+                        '..gwkwg..gwkwg..',
+                        '..gggggggggggg..',
+                        '.gggggggggggggg.',
+                        '.ggddddddddddgg.',
+                        '.gggggggggggggg.',
+                        '..gggggggggggg..',
+                        '..gllllllllllg..',
+                        '..gllllllllllg..',
+                        'gggllllllllllggg',
+                        'ggg.gllllllg.ggg',
+                        'gg..gg....gg..gg',
+                        'ggg.ggg..ggg.ggg',
+                        '................'
+                    ]
+                },
+                invader: {
+                    pal: { '#': '#7dff9b' },
+                    rows: [
+                        '................',
+                        '................',
+                        '................',
+                        '................',
+                        '....#.....#.....',
+                        '.....#...#......',
+                        '....#######.....',
+                        '...##.###.##....',
+                        '..###########...',
+                        '..#.#######.#...',
+                        '..#.#.....#.#...',
+                        '.....##.##......',
+                        '................',
+                        '................',
+                        '................',
+                        '................'
+                    ]
+                },
+                tetris: {
+                    pal: { y: '#ffd166', p: '#c77dff', r: '#ff5d5d' },
+                    rows: [
+                        '....yyy.yyy.....',
+                        '....yyy.yyy.....',
+                        '....yyy.yyy.....',
+                        '................',
+                        'ppp.ppp.ppp.rrr.',
+                        'ppp.ppp.ppp.rrr.',
+                        'ppp.ppp.ppp.rrr.',
+                        '................',
+                        '....ppp.rrr.rrr.',
+                        '....ppp.rrr.rrr.',
+                        '....ppp.rrr.rrr.',
+                        '................',
+                        '................',
+                        '................',
+                        '................',
+                        '................'
+                    ]
+                },
+                snake: {
+                    pal: { g: '#52d273', h: '#9bf5a8', k: '#111111', a: '#ff4d4d' },
+                    rows: [
+                        '................',
+                        '............aa..',
+                        '............aa..',
+                        '................',
+                        '....ggggggggkh..',
+                        '....gggggggghh..',
+                        '....gg..........',
+                        '....gg..........',
+                        '....gggggggggg..',
+                        '....gggggggggg..',
+                        '..........gg....',
+                        '..........gg....',
+                        '....gggggggggg..',
+                        '....gggggggggg..',
+                        '................',
+                        '................'
+                    ]
+                },
+                tiles: {
+                    pal: { a: '#eee4da', b: '#f2b179', c: '#f67c5f', d: '#edc22e' },
+                    rows: [
+                        'aaaaaaa.bbbbbbb.',
+                        'aaaaaaa.bbbbbbb.',
+                        'aaaaaaa.bbbbbbb.',
+                        'aaaaaaa.bbbbbbb.',
+                        'aaaaaaa.bbbbbbb.',
+                        'aaaaaaa.bbbbbbb.',
+                        'aaaaaaa.bbbbbbb.',
+                        '................',
+                        'ccccccc.ddddddd.',
+                        'ccccccc.ddddddd.',
+                        'ccccccc.ddddddd.',
+                        'ccccccc.ddddddd.',
+                        'ccccccc.ddddddd.',
+                        'ccccccc.ddddddd.',
+                        'ccccccc.ddddddd.',
+                        '................'
+                    ]
+                },
+                barrel: {
+                    pal: { b: '#c26a2e', o: '#ffd27a', r: '#ff7a90' },
+                    rows: [
+                        '................',
+                        '................',
+                        '....bbbbbbbb....',
+                        '...bbbbbbbbbb...',
+                        '..bbbbbbbbbbbb..',
+                        '..oooooooooooo..',
+                        '..bbbbbbbbbbbb..',
+                        '..bbbbbbbbbbbb..',
+                        '..bbbbbbbbbbbb..',
+                        '..oooooooooooo..',
+                        '..bbbbbbbbbbbb..',
+                        '...bbbbbbbbbb...',
+                        '....bbbbbbbb....',
+                        'rrrrrrrrrrrrrrrr',
+                        'rr..rr..rr..rr..',
+                        'rrrrrrrrrrrrrrrr'
+                    ]
+                },
+                pacman: {
+                    pal: { y: '#ffe14d', d: '#fff2b0' },
+                    rows: [
+                        '................',
+                        '....yyyyyy......',
+                        '..yyyyyyyyyy....',
+                        '.yyyyyyyyyyy....',
+                        '.yyyyyyyyyy.....',
+                        'yyyyyyyyy.......',
+                        'yyyyyyy.........',
+                        'yyyyy.....dd..dd',
+                        'yyyyyyy.........',
+                        'yyyyyyyyy.......',
+                        '.yyyyyyyyyy.....',
+                        '.yyyyyyyyyyy....',
+                        '..yyyyyyyyyy....',
+                        '....yyyyyy......',
+                        '................',
+                        '................'
+                    ]
+                }
+            };
+
+            document.querySelectorAll('canvas.sprite').forEach(function (cv) {
+                var s = SPRITES[cv.dataset.sprite];
+                if (!s) return;
+                var ctx = cv.getContext('2d');
+                s.rows.forEach(function (row, y) {
+                    for (var x = 0; x < row.length; x++) {
+                        var c = s.pal[row[x]];
+                        if (c) { ctx.fillStyle = c; ctx.fillRect(x, y, 1, 1); }
+                    }
+                });
+            });
+
+            /* ---------- Scena animata nello schermo CRT ---------- */
+            var cv = document.getElementById('scene');
+            if (!cv) return;
+            var ctx = cv.getContext('2d');
+            var W = cv.width, LANE = 54;
+
+            var GHOST = [
+                '....######....',
+                '..##########..',
+                '.############.',
+                '.############.',
+                '##############',
+                '##############',
+                '##############',
+                '##############',
+                '##############',
+                '##############',
+                '##############',
+                '##############',
+                '##.###..###.##',
+                '#...##..##...#'
+            ];
+
+            function drawGhost(cx, scared, dir) {
+                var x = Math.round(cx - 7), y = LANE - 7;
+                ctx.fillStyle = scared ? '#2d3bff' : '#ff4d4d';
+                GHOST.forEach(function (row, j) {
+                    for (var i = 0; i < 14; i++) if (row[i] === '#') ctx.fillRect(x + i, y + j, 1, 1);
+                });
+                if (scared) {
+                    ctx.fillStyle = '#ffb8d9';
+                    ctx.fillRect(x + 4, y + 5, 2, 2);
+                    ctx.fillRect(x + 8, y + 5, 2, 2);
+                } else {
+                    ctx.fillStyle = '#fff';
+                    ctx.fillRect(x + 3, y + 4, 3, 4);
+                    ctx.fillRect(x + 8, y + 4, 3, 4);
+                    ctx.fillStyle = '#1a2cff';
+                    var p = dir > 0 ? 1 : 0;
+                    ctx.fillRect(x + 3 + p, y + 6, 2, 2);
+                    ctx.fillRect(x + 8 + p, y + 6, 2, 2);
+                }
+            }
+
+            function drawPac(cx, cy, r, dir, mouth) {
+                var base = dir > 0 ? 0 : Math.PI;
+                ctx.fillStyle = '#ffe14d';
+                ctx.beginPath();
+                ctx.moveTo(cx, cy);
+                ctx.arc(cx, cy, r, base + mouth, base + Math.PI * 2 - mouth);
+                ctx.closePath();
+                ctx.fill();
+            }
+
+            function drawMaze() {
+                ctx.strokeStyle = '#2b36c9';
+                ctx.lineWidth = 1;
+                [14.5, 76.5, 138.5].forEach(function (x) {
+                    ctx.strokeRect(x, 22.5, 40, 18);
+                    ctx.strokeRect(x, 68.5, 40, 18);
+                });
+            }
+
+            var dir = 1, x = -12, tick = 0, eatenAt = -1, eatenX = 0;
+
+            function render() {
+                ctx.fillStyle = '#05050d';
+                ctx.fillRect(0, 0, cv.width, cv.height);
+                drawMaze();
+
+                // puntini ancora da mangiare
+                ctx.fillStyle = '#ffd9a8';
+                for (var dx = 8; dx < W; dx += 12) {
+                    var eaten = dir > 0 ? dx < x : dx > x;
+                    if (!eaten) ctx.fillRect(dx - 1, LANE - 1, 2, 2);
+                }
+
+                // fantasma: dietro a Pac-Man all'inizio, in fuga dopo la pillola
+                var scared = dir < 0;
+                var gap = scared ? Math.max(0, 36 - (W + 12 - x) * 0.18) : 30;
+                if (scared && gap < 7 && eatenAt < 0) { eatenAt = tick; eatenX = x - 8; }
+                if (!(scared && eatenAt >= 0)) drawGhost(x - gap, scared, dir);
+
+                var mouth = (Math.sin(tick * 0.35) + 1) / 2 * 0.7 + 0.05;
+                drawPac(x, LANE, 7, dir, mouth);
+
+                if (eatenAt >= 0 && tick - eatenAt < 45) {
+                    ctx.fillStyle = '#5dd9ff';
+                    ctx.font = '8px "Press Start 2P", monospace';
+                    ctx.fillText('200', Math.round(eatenX - 8), LANE + 3);
+                }
+
+                // vite
+                drawPac(10, 98, 4, 1, 0.5);
+                drawPac(22, 98, 4, 1, 0.5);
+            }
+
+            function step() {
+                tick++;
+                x += dir * (dir > 0 ? 0.8 : 1.0);
+                if (dir > 0 && x > W + 44) { dir = -1; x = W + 12; eatenAt = -1; }
+                else if (dir < 0 && x < -44) { dir = 1; x = -12; eatenAt = -1; }
+            }
+
+            render();
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { x = 88; render(); return; }
+
+            function loop() { step(); render(); requestAnimationFrame(loop); }
+            requestAnimationFrame(loop);
+        })();
+    </script>
+</body>
+</html>
